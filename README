@@ -1,0 +1,1 @@
+podman run -it --rm -eDISPLAY  --userns keep-id:uid=1234,gid=1234  -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v $XAUTHORITY:$XAUTHORITY:ro  -v ~/.local/share/qutebrowser:/home/nonroot/.local/share/qutebrowser -v ~/.cache/qutebrowser/:/home/nonroot/.cache/qutebrowser -v ~/.config/qutebrowser:/home/nonroot/.config/qutebrowser --device=/dev/dri/ qutebrowser
