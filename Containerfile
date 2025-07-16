@@ -1,3 +1,4 @@
+LABEL org.opencontainers.image.source=https://github.com/mmuzila/qutebrowser-container
 FROM fedora:latest
 RUN dnf install -y qutebrowser
 ENV DISPLAY=:0
